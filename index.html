@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>E-course Registration form</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="index.js"></script>
+</head>
+
+<body id="body1">
+    <div class="container">
+        <form method="get" name="Regform" action="output.html" onsubmit="return check()">
+            <br> <br> <br>
+            <table>
+
+                <caption>E-course Registration page</caption>
+                <br>
+                <br>
+                <tr>
+
+                    <th> <label for="fn">Name</label></th>
+                    <td><input type="text" id="fn" name="fname" required placeholder="e.g Lisa" /></td>
+
+                </tr>
+
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" name="email" required placeholder="e.g Lisa128@gmail.com" /></td>
+                </tr>
+
+                <tr>
+                    <th>Contact Number</th>
+                    <td>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required
+                            pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Date of Birth</th>
+                    <td><input type="date" name="dob" id="dob" required placeholder="e.g 02/05/2000" /></td>
+                </tr>
+
+                <tr>
+                    <th>Address</th>
+                    <td><input type="text" name="Address" required placeholder="e.g east of Bandra" /></td>
+                </tr>
+
+                <tr>
+                    <th><label for="Gender">Gender</label></th>
+                    <td>
+                        <select id="Gender">
+                            <OPtion> </OPtion>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><label for="Marital">Marital Status</label></th>
+                    <td>
+                        <select id="Marital">
+                            <OPtion> </OPtion>
+                            <option>Single</option>
+                            <option>Married</option>
+                            <option>Divorced</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><label for="country">Country</label></th>
+                    <td>
+                        <select id="country" onchange="populateStates()">
+                            <option value="">Select a country</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><label for="state">State</label></th>
+                    <td>
+                        <select id="state">
+                            <option value="">Select a state</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Pincode</th>
+                    <td>
+                        <input type="text" id="pincode" name="pincode" placeholder="Enter PIN code" required
+                            pattern="\d{6}" title="Enter a 6-digit PIN code">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th><label for="Course">Course</label></th>
+                    <td>
+                        <select id="Course">
+                            <OPtion> </OPtion>
+                            <option>Data-Science and Machine Learning</option>
+                            <option>Internet of Things</option>
+                            <option>Industrial Robotics and Automation</option>
+                            <option>Data Structure and Algorithum using Python</option>
+                            <option>Deep-Learning and Neural Network</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit" class="btn btn-primary" />
+                        <input type="reset" value="Reset" class="btn btn-primary" />
+
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

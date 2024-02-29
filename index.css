@@ -1,0 +1,107 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+
+table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+table:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+caption {
+    color: #007BFF;
+    background-color: #f8f8f8;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+caption:hover {
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+caption::before {
+    content: '\f007';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+caption:hover::before {
+    transform: scale(1.2);
+}
+
+body {
+    background-color: #b6b8b9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.centered-box {
+    background-color: #fff;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007BFF;
+    font-size: 24px;
+}
+
+.registration-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.registration-button:hover {
+    background-color: #0056b3;
+}
